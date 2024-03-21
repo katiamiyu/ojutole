@@ -1,0 +1,183 @@
+.admin-gr {
+    margin: 50px auto;
+    height: 550px;
+    background: #fefefe;
+    border-radius: 10px;
+}
+section{
+    overflow: hidden;
+}
+.nav-aside{
+    background-color: #f3f3f3;
+    border-right: 1px solid #111;
+    border-radius:10px 0 0 10px;
+    float: left;
+    height: 100%;
+    width: 15%;
+}
+.nav-aside ul{
+    margin-top: 50px;
+    list-style-type: none;
+}
+.nav-aside ul li{
+    box-sizing: border-box;
+    background-color: #111;
+    border: 1px solid #111;
+    border-radius: 5px;
+    margin: 1px auto;
+    padding: 10px 0 10px 20px;
+    text-align: left;
+    width: 80%;
+}
+.nav-aside ul li a{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 100%;
+}
+.nav-aside ul li a:hover, .current{
+    font-weight: bold;
+}
+aside{
+    width: 84%;
+    float: left;
+}
+input[type="number"]::-webkit-outer-spin-button, 
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=text], input[type=password], input[type=email], input[type=number]{
+    width:220px;
+    height: 25px;
+    padding: 10px;
+}
+select{
+    width:120px;
+    height: 25px;
+}
+input[type=submit]{
+    margin-top: 5px;
+    width: 100px;
+    padding: 5px;
+}
+.def-set{
+    overflow: hidden;
+    border-radius: 5px;
+    width: 95%;
+    margin:10px auto;
+    max-height: 330px;
+}
+.form-gr{
+    padding: 20px 0 20px 25px;
+    width: 100%;
+}
+.rows{
+    overflow: hidden;
+    width: 95%;
+}
+.cols{
+    box-sizing: border-box;
+    text-align: center;
+    height: 28px;
+    font-size: 75%;
+    padding: 4px 5px;
+    float: left;
+}
+#headrow{
+    color: #111;
+    font-weight: bold;
+    background-color: #f3f3f3;
+    border-top: 1px solid #111;
+    border-bottom: 1px solid #111;
+    height: 25px;
+}
+.sn{
+    width: 5%;
+    border-right: 1px solid #111;
+    border-bottom: 1px solid #111;
+}
+.resident{
+    width: 20%;
+    border-right: 1px solid #111;
+    border-bottom: 1px solid #111;
+}
+.address{
+    width: 25%;
+    border-right: 1px solid #111;
+    border-bottom: 1px solid #111;
+}
+.gender{
+    width: 15%;
+    border-right: 1px solid #111;
+    border-bottom: 1px solid #111;
+}
+.dob{
+    width: 10%;
+    border-right: 1px solid #111;
+    border-bottom: 1px solid #111;
+}
+.actions{
+    width: 25%;
+    border-bottom: 1px solid #111;
+}
+.actions button{
+    padding: 0 10px;
+}
+#foodtable{
+    overflow:scroll;
+}
+.one-two{
+    width: 48%;
+}
+@media only screen and (max-width: 750px) {
+    .admin-gr {
+        height: 580px;
+    }
+    .nav-aside ul li{
+        padding: 5px 5px;
+    }
+    .nav-aside ul li a{
+        font-size: 60%;
+    }
+    #foodtxt{
+        width: 90%;
+        margin: 2px;
+    }
+    #descriptiontxt{
+        width: 90%;
+        margin: 2px;
+    }
+    #categorytxt{
+        width: 44%;
+        margin: 2px;
+    }
+    #qtytxt{
+        width: 44%;
+        margin: 2px;
+    }
+    .sn{
+        width: 10%;
+        border-left: 1px solid #111;
+    }
+    .foodname{
+        width: 45%;
+    }
+    .description{
+        width: 45%;
+    }
+    .category{
+        width: 55%;
+        border-left: 1px solid #111;
+    }
+    .qty{
+        width: 45%;
+    }
+    .actions{
+        width: 100%;
+        border-right: 1px solid #111;
+        border-left: 1px solid #111;
+    }
+    .actions button{
+        padding: 0 10px;
+    }
+} 

@@ -1,0 +1,215 @@
+*{
+    padding: 0;
+    margin:0;
+    font-family: Century Gothic;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-size: 180%;
+    font-weight: 800;
+    line-height: 155%;
+}
+h2{
+    font-size: 140%;
+    font-weight: 600;
+    line-height:155%;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+.background-settings{
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(../img/home.jpg);;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    height: 100vh;
+}
+nav ul{
+    margin-top: 20px;
+    float: right;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    padding:5px 20px;
+    color: #fff;
+    border: 1px solid #fff;
+    font-weight: bold;
+    transition: 0.6s ease;
+}
+nav ul li a:hover{
+    color:#111;
+    background-color: #fff;
+}
+.logo{
+    text-transform: uppercase;
+    font-size: 160%;
+    float: left;
+    margin-top: 15px;
+    padding-left: 10px;
+    font-weight: bold;
+    color: #fff;
+}
+.header-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.header-text h1{
+    color: #fff;
+    text-align: center;
+    text-shadow: 1px 1px 8px #111;
+    text-transform: uppercase;
+}
+.btn-grp{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.btn{
+    text-transform: uppercase;
+    padding: 10px 30px;
+    color: #fff;
+    border: 1px solid #fff;
+    font-weight: bold;
+    transition: 0.6s ease;
+}
+.btn:hover{
+    background-color: #fff;
+    color: #111;
+}
+.btn-close {
+    color: #aaaaaa;
+    font-size: 30px;
+    text-decoration: none;
+    position: absolute;
+    right: 5px;
+    top: 0;
+}
+.btn-close:hover {
+    color: #919191;
+}
+
+.modal:before {
+    content: "";
+    display: none;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+}
+.modal:target:before {
+    display: block;
+}
+.modal:target .modal-dialog {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+    top: 20%;
+}
+.modal-dialog {
+    background: #fefefe;
+    border: #333333 solid 1px;
+    border-radius: 5px;
+    margin-left: -200px;
+    position: fixed;
+    left: 54%;
+    top: -100%;
+    z-index: 11;
+    width: 360px;
+    -webkit-transform: translate(0, -500%);
+    -ms-transform: translate(0, -500%);
+    transform: translate(0, -500%);
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    -moz-transition: -moz-transform 0.3s ease-out;
+    -o-transition: -o-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+}
+.modal-body {
+    padding: 20px 0 0 50px;
+}
+.modal-header,.modal-footer {
+    padding: 10px 20px;
+}
+.modal-header {
+    border-bottom: #eeeeee solid 1px;
+}
+.modal-header h2 {
+    text-align: center;
+    font-size: 20px;
+    color: #111;
+    text-transform: uppercase;
+}
+.modal-footer {
+    border-top: #eeeeee solid 1px;
+    text-align: right;
+}
+/*ADDED TO STOP SCROLLING TO TOP*/
+#close {
+    display: none;
+}
+.form-inbox input{
+    width: 250px;
+    margin-bottom: 20px;
+}
+.form-inbox input[type=text], .form-inbox input[type="password"], .form-inbox input[type="email"], .form-inbox input[type="number"]{
+    border: none;
+    border-bottom: 1px solid #111;
+    background: transparent;
+    outline: none;
+    height:40px;
+    font-size: 100%;
+}
+.form-inbox input[type=submit]{
+    border: none;
+    outline:none;
+    height:40px;
+    background: #111;
+    color: #fff;
+    font-size:100%;
+    border-radius: 20px;
+}
+.form-inbox p{
+    margin:0;
+    padding:0;
+    font-weight: bold;
+}
+@media screen and (max-width: 750px){
+    h1{
+        font-size: 150%;
+    }
+    .header-text h1{
+        line-height: 100%;
+    }
+    nav{
+        width:100%;
+        text-align: center;
+    }
+    nav ul{
+        float:none;
+        margin:0;
+    }
+    nav ul li a{
+        padding:5px 15px;
+    }
+    .logo{
+        text-align: center;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .btn{
+        padding: 5px 20px;
+    }
+}
