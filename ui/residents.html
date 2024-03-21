@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ojutole | Admin</title>
+    <link rel="stylesheet" href="./assets/css/resident.css">
+    <link rel="stylesheet" href="./assets/css/residents.css">
+</head>
+<body class="background-settings">
+    <section>
+        <div class="container admin-gr">
+            <div class="nav-aside">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="#">Users</a></li>
+                    <li><a href="#" class="current" >Residents</a></li>
+                    <li><a href="#">Reports</a></li>
+                    <li><a href="#">Log out</a></li>
+                </ul>
+            </div>
+            <aside>
+                <div class="modal-header">
+                    <h2>Admin: Adebayo Tiamiyu</h2>
+                </div>
+                    <fieldset class="def-set">
+                        <form action="">
+                            <div class="form-gr">
+                                <label for="residentname">
+                                    <input type="text" name="residentname" id="foodtxt" placeholder="resident">
+                                </label>
+                                <label for="address">
+                                    <input type="text" name="address" id="addresstxt" placeholder="address" >
+                                </label>
+                                <label for="gender">
+                                    <select name="gender" id="gendertxt">
+                                        <option value="choose">Select gender</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                        <option value="none">Unknown</option>
+                                    </select>
+                                </label>
+                                <label for="dateofbirth">
+                                    <input type="date" name="dateofbirth" id="">
+                                </label>
+                                <br>
+                                <input type="submit" value="submit">
+                            </div>
+                        </form>
+                    </fieldset> 
+                    <fieldset class="def-set" id="foodtable">
+                        <div class="form-gr" >
+                            <div class="rows" id="headrow">
+                                <div class="cols sn">SN</div>
+                                <div class="cols resident">RESIDENT NAME</div>
+                                <div class="cols address">ADDRESS</div>
+                                <div class="cols gender">GENDER</div>
+                                <div class="cols dob">DOB</div>
+                                <div class="cols actions">ACTIONS</div>
+                            </div>
+                            <div class="rows">
+                                    <div class="cols sn">1</div>
+                                    <div class="cols resident">RESIDENT NAME</div>
+                                    <div class="cols address">ADDRESS</div>
+                                    <div class="cols gender">GENDER</div>
+                                    <div class="cols dob">DOB</div>
+                                    <div class="cols actions">
+                                        <button>View</button>
+                                        <button>Edit</button>
+                                        <button>Delete</button>
+                                    </div>
+                            </div>
+                            <div class="rows">
+                                <div class="cols sn">2</div>
+                                <div class="cols resident">RESIDENT NAME</div>
+                                <div class="cols address">ADDRESS</div>
+                                <div class="cols gender">GENDER</div>
+                                <div class="cols dob">DOB</div>
+                                <div class="cols actions">
+                                    <button>View</button>
+                                    <button>Edit</button>
+                                    <button>Delete</button>
+                                </div>
+                        </div>
+                        <div class="rows">
+                            <div class="cols sn">3</div>
+                            <div class="cols resident">RESIDENT NAME</div>
+                            <div class="cols address">ADDRESS</div>
+                            <div class="cols gender">GENDER</div>
+                            <div class="cols dob">DOB</div>
+                            <div class="cols actions">
+                                <button>View</button>
+                                <button>Edit</button>
+                                <button>Delete</button>
+                            </div>
+                    </div>
+                            
+                        </div>
+                    </fieldset>             
+            </aside>
+        </div>
+    </section>   
+</body>
+</html>
