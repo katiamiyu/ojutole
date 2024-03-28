@@ -1,0 +1,23 @@
+{
+  "name": "ojutole",
+  "version": "1.0.0",
+  "description": "residence management system",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/katiamiyu/ojutole.git"
+  },
+  "author": "katiamiyu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/katiamiyu/ojutole/issues"
+  },
+  "homepage": "https://github.com/katiamiyu/ojutole#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2"
+  }
+}
